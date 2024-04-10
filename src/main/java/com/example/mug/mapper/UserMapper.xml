@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.UserMapper">
+
+    <select id="findAll" resultType="com.example.mug.entity.User">
+        SELECT * FROM User
+    </select>
+
+    <select id="findById" parameterType="Long" resultType="com.example.mug.entity.User">
+        SELECT * FROM User WHERE UserID = #{userId}
+    </select>
+
+    <insert id="insert" parameterType="com.example.mug.entity.User">
+        INSERT INTO User (UserID, 이름, 전화번호, 이메일, 회원여부, 소셜로그인타입)
+        VALUES (#{userId}, #{name}, #{phoneNumber}, #{email}, #{isMember}, #{socialLoginType})
+    </insert>
+
+    <update id="update" parameterType="com.example.mug.entity.User">
+        UPDATE User
+        SET 이름 = #{name}, 전화번호 = #{phoneNumber}, 이메일 = #{email}, 회원여부 = #{isMember}, 소셜로그인타입 = #{socialLoginType}
+        WHERE UserID = #{userId}
+    </update>
+
+    <delete id="delete" parameterType="Long">
+        DELETE FROM User WHERE UserID = #{userId}
+    </delete>
+
+</mapper>
