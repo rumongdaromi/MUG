@@ -1,4 +1,4 @@
-package com.example.mug.DTO;
+package com.example.mug.entity;
 
 public class TestInfo {
     private Integer id;

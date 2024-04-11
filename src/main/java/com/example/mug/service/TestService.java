@@ -1,20 +1,19 @@
-package com.example.service;
+package com.example.mug.service;
 
-import com.example.mapper.mapper;
-import com.example.model.TestInfo;
+import com.example.mug.mapper.TestInfoMapper;
+import com.example.mug.entity.TestInfo;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
 public class TestService {
+    private final TestInfoMapper testInfoMapper;
 
-    private final mapper mapper;
-
-    public UserService(UserMapper userMapper) {
-        this.mapper = mapper;
+    public TestService(TestInfoMapper testInfoMapper) {
+        this.testInfoMapper = testInfoMapper;
     }
 
     public List<TestInfo> findAll() {
-        return mapper.findAll();
+        return testInfoMapper.findAll();
     }
 }

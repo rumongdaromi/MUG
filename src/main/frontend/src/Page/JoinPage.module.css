@@ -144,11 +144,26 @@
     height: 76px;
     text-shadow: 2px 0 0#000, 0 2px 0#000, -2px 0 0#000, 0-2px 0#000;
 }
+/*.div {*/
+/*    width: 100%;*/
+/*    left: calc(10%);*/
+/*    position: relative;*/
+/*    background-color: var(--color-white);*/
+/*    height: 1024px;*/
+/*    overflow: hidden;*/
+/*    text-align: left;*/
+/*    font-size: var(--font-size-11xl);*/
+/*    color: var(--color-black);*/
+/*    font-family: var(--font-inter);*/
+/*}*/
 .div {
-    width: 100%;
-    position: relative;
+    position: absolute; /* 또는 fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* 필요한 경우 */
     background-color: var(--color-white);
-    height: 1024px;
+    height: 1024px; /* 필요한 경우 */
     overflow: hidden;
     text-align: left;
     font-size: var(--font-size-11xl);
