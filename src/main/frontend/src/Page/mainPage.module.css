@@ -1,0 +1,282 @@
+.mug {
+    position: absolute;
+    top: 29px;
+    left: calc(50% - 95px);
+    font-size: var(--font-size-45xl);
+    letter-spacing: -0.06em;
+    display: inline-block;
+    width: 147px;
+    height: 76px;
+    text-shadow: 2px 0 0#000, 0 2px 0#000, -2px 0 0#000, 0-2px 0#000;
+}
+.image4Icon,
+.image5Icon {
+    position: absolute;
+    top: 83px;
+    left: calc(50% + 180px);
+    width: 25px;
+    height: 25.8px;
+    object-fit: cover;
+}
+.image5Icon {
+    left: calc(50% + 240px);
+    height: 25px;
+}
+.child {
+    position: absolute;
+    top: 182px;
+    left: calc(50% - 331px);
+    border-top: 2px solid var(--color-black);
+    box-sizing: border-box;
+    width: 618px;
+    height: 2px;
+}
+.image6Icon,
+.item {
+    position: absolute;
+    left: calc(50% - 330px);
+    width: 616px;
+}
+.image6Icon {
+    top: 183px;
+    height: 614.9px;
+    object-fit: cover;
+}
+.item {
+    top: 845px;
+    background-color: var(--color-white);
+    height: 149px;
+}
+.image10Icon,
+.image11Icon,
+.image12Icon,
+.image7Icon,
+.image8Icon,
+.image9Icon {
+    position: absolute;
+    top: 859px;
+    left: 399px;
+    border-radius: var(--br-mini);
+    width: 100px;
+    height: 101.5px;
+    object-fit: cover;
+}
+.image10Icon,
+.image11Icon,
+.image12Icon,
+.image8Icon,
+.image9Icon {
+    left: 509px;
+    height: 100px;
+}
+.image10Icon,
+.image11Icon,
+.image12Icon,
+.image9Icon {
+    left: 619px;
+    height: 100.5px;
+}
+.image10Icon,
+.image11Icon,
+.image12Icon {
+    left: 729px;
+    height: 100px;
+}
+.image11Icon,
+.image12Icon {
+    left: 839px;
+}
+.image12Icon {
+    left: 949px;
+}
+.div1,
+.div2,
+.div3,
+.div4,
+.div5 {
+    position: absolute;
+    top: 133px;
+    left: 420px;
+    letter-spacing: -0.06em;
+    display: inline-block;
+    width: 36px;
+    height: 22px;
+}
+.div2,
+.div3,
+.div4,
+.div5 {
+    left: 635px;
+    width: 54px;
+}
+.div3,
+.div4,
+.div5 {
+    left: 480px;
+    width: 37px;
+}
+.div4,
+.div5 {
+    left: 720px;
+    width: 54px;
+}
+.div5 {
+    left: 540px;
+    width: 71px;
+}
+
+.divNav{
+    position: absolute;
+    left: calc(50% - 600px);
+}
+.categori{
+    position: absolute;
+    left: calc(50% - 740px);
+}
+.div {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-white);
+    height: 1024px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-xl);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+    overflow: auto; /* 내용이 많을 경우 스크롤바 생성 */
+}
+
+.image18Icon{
+    top: 183px;
+    height: 614.9px;
+    object-fit: cover;
+}
+
+.div_event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 텍스트 사이의 간격 조정 */
+}
+
+.discount {
+    font-weight: bold;
+    color: red;
+}
+
+.pack {
+    margin: 0; /* 기본 마진 제거 */
+}
+
+.price {
+    font-size: 1rem;
+}
+
+
+
+
+/*============================*/
+.sliderContainer {
+    display: flex;
+    overflow: hidden; /* 컨테이너 크기를 넘어가는 부분 숨김 */
+}
+
+/* 슬라이드 애니메이션 및 기타 스타일 */
+
+/*.div {*/
+/*    width: 100%;*/
+/*    position: relative;*/
+/*    background-color: var(--color-white);*/
+/*    height: 1024px;*/
+/*    overflow: hidden;*/
+/*    text-align: left;*/
+/*    font-size: var(--font-size-xl);*/
+/*    color: var(--color-black);*/
+/*    font-family: var(--font-inter);*/
+/*    overflow: auto; !* 내용이 많을 경우 스크롤바 생성 *!*/
+/*}*/
+.div_1 {
+    position: relative;
+    left: calc(50% - 750px);
+    height: 1024px;
+    width: 100%;
+    background-color: var(--color-grey); /* 구분을 위한 배경색 변경 */
+    /* div_1의 높이는 내용에 따라 조정 */
+    overflow: scroll; /* 내용이 많을 경우 스크롤바 생성 */
+    margin-top: 400px;
+}
+.top5 {
+    position: absolute;
+}
+.top5 {
+    top: 20px;
+    left: 423px;
+    font-size: 25px;
+    letter-spacing: -0.06em;
+    display: inline-block;
+    width: 211px;
+    height: 29px;
+}
+
+.image18Icon {
+    position: absolute;
+    top: 70px;
+    left: 410px;
+    width: 618px;
+    height: 615.5px;
+    object-fit: cover;
+}
+
+.image19Icon,
+.image20Icon {
+    position: absolute;
+    top: 690px;
+    left: 826px;
+    width: 200px;
+    height: 225.1px;
+    object-fit: cover;
+}
+.image20Icon {
+    left: 618px;
+    height: 225px;
+}
+.pack {
+    margin: 0;
+}
+
+.essential2way,
+.packContainer {
+    position: absolute;
+    top: 923px;
+    left: 420px;
+    letter-spacing: -0.06em;
+    display: inline-block;
+    width: 190px;
+    height: 27px;
+}
+
+.essential2way {
+    left: 630px;
+}
+
+.span {
+    color: var(--color-black);
+    white-space: pre-wrap;
+}
+
+.image21Icon {
+    position: absolute;
+    top: 690px;
+    left: 410px;
+    width: 200px;
+    height: 226.3px;
+    object-fit: cover;
+}
+
+
+

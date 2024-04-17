@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mug.mapper.OrdersMapper">
+
+    <resultMap id="orderResultMap" type="com.example.mug.entity.Orders">
+        <id property="orderId" column="OrderID"/>
+        <result property="userId" column="UserID"/>
+        <result property="productId" column="ProductID"/>
+        <result property="orderDate" column="주문날짜"/>
+        <result property="quantity" column="수량"/>
+        <result property="status" column="주문상태"/>
+    </resultMap>
+
+    <select id="findAllOrders" resultType="com.example.mug.entity.Orders">
+        SELECT * FROM Orders
+    </select>
+
+    <insert id="insertOrder" parameterType="com.example.mug.entity.Orders">
+        INSERT INTO Orders (UserID, ProductID, 주문날짜, 수량, 주문상태)

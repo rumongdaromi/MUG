@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mug.mapper.ProductsMapper">
+
+    <resultMap id="productResultMap" type="com.example.mug.entity.Products">
+        <id property="productId" column="ProductID"/>
+        <result property="productCode" column="상품코드"/>
+        <result property="name" column="이름"/>
+        <result property="category" column="카테고리"/>
+        <result property="gender" column="성별"/>
+        <result property="price" column="가격"/>
+        <result property="size" column="사이즈"/>
+        <result property="option1" column="옵션1"/>
+        <result property="option2" column="옵션2"/>
+    </resultMap>
+
+    <select id="findAllProducts" resultType="com.example.mug.entity.Products">
+        SELECT * FROM Product
+    </select>
+
+    <insert id="insertProduct" parameterType="com.example.mug.entity.Products">
+        INSERT INTO Product (상품코드, 이름, 카테고리, 성별, 가격, 사이즈, 옵션1, 옵션2)
+        VALUES (#{productCode}, #{name}, #{category}, #{gender}, #{price}, #{size}, #{option1}, #{option2})
+    </insert>
+
+    <!-- Update, Delete 등의 추가적인 쿼리 작성 가능 -->
+</mapper>

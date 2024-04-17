@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mug.mapper.UsersMapper">
+
+    <resultMap id="userResultMap" type="com.example.mug.entity.Users">
+        <id property="userId" column="`UserID`"/>
+        <result property="name" column="`이름`"/>
+        <result property="phoneNumber" column="`전화번호`"/>
+        <result property="email" column="`이메일`"/>
+        <result property="isMember" column="`회원여부`"/>
+        <result property="socialLoginType" column="`소셜로그인 타입`"/>
+    </resultMap>
+
+    <select id="findAllUsers" resultType="com.example.mug.entity.Users">
+        SELECT * FROM Users
+    </select>
+
+    <insert id="insertUsers" parameterType="com.example.mug.entity.Users">
+        INSERT INTO Users (`이름`, `전화번호`, `이메일`, `회원여부`, `소셜로그인 타입`)
+        VALUES (#{name}, #{phoneNumber}, #{email},#{password} ,#{isMember}, #{socialLoginType})
+    </insert>
+
+
+    <insert id="save" parameterType="com.example.mug.entity.Users">
+        INSERT INTO Users(username, password, enabled)
+        VALUES (#{username}, #{password}, #{enabled})
+    </insert>
+
+    <select id="findByUsername" parameterType="String" resultType="com.example.mug.entity.Users">
+        SELECT * FROM Users WHERE username = #{username}
+    </select>
+
+    <!-- Update, Delete 등의 추가적인 쿼리 작성 가능 -->
+</mapper>
